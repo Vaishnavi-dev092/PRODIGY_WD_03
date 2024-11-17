@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; /* Dark black background */
+    color: #fff; /* White text for contrast */
+}
+
+.game-container {
+    margin: 50px auto;
+    width: 320px;
+    border: 3px solid #4a002e; /* Dark wine red border */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #260019; /* Deep wine red background */
+    box-shadow: 0 0 20px #4a002e; /* Subtle glow effect */
+}
+
+.title {
+    font-size: 2rem;
+    color: #800040; /* Darker wine red */
+    text-shadow: 2px 2px 4px black;
+    margin-bottom: 20px;
+}
+
+/* Board Styles */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4a002e; /* Dark wine red cell background */
+    border: 2px solid #1a1a1a; /* Black border */
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    background: #800040; /* Lighter wine red on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.cell.taken {
+    pointer-events: none;
+    color: #ffcccc; /* Faded text for taken cells */
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    color: #ffcccc; /* Soft wine red for status text */
+}
+
+/* Button Styles */
+.btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: #4a002e; /* Dark wine red button */
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #800040; /* Lighter wine red on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
